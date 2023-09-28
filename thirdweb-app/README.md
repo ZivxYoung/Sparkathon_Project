@@ -1,29 +1,31 @@
+## Solana frontend started kit
+
+This template has everything you need to build a web3 app on Solana using the thirdweb SDK.
+
 ## Getting Started
 
 Create a project using this example:
 
 ```bash
-npx thirdweb create --template cra-javascript-solana-starter
+npx thirdweb create --template next-javascript-solana-starter
 ```
 
-You can start editing the page by modifying `src/index.js`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `pages/index.jsx`. The page auto-updates as you edit the file.
 
-On `src/index.js`, you'll find our `ThirdwebProvider` wrapping your app, this is necessary for our hooks to work.
+On `pages/_app.jsx`, you'll find our `ThirdwebProvider` wrapping your app, this is necessary for our hooks to work.
 
-on `src/App.js`, you'll find the `useProgram` hook to show you how to connect and start interacting with your Solana program.
+on `pages/index.jsx`, you'll find an example of a connect wallet button and some hooks.
 
 ## Learn More
 
-To learn more about thirdweb, React and CRA, take a look at the following resources:
+To learn more about thirdweb and Next.js, take a look at the following resources:
 
-- [thirdweb React Documentation](https://portal.thirdweb.com/react) - learn about our React SDK.
-- [thirdweb Solana Documentation](https://portal.thirdweb.com/solana) - learn about our Solana SDK.
-- [thirdweb SDK Documentation](https://portal.thirdweb.com/sdk) - learn about our JavaScript/TypeScript SDK.
-- [thirdweb Portal](https://docs.thirdweb.com/react) - check our guides and development resources.
-- [React documentation](https://reactjs.org/) - learn React.
+- [thirdweb React Documentation](https://docs.thirdweb.com/react) - learn about our React SDK.
+- [thirdweb Portal](https://docs.thirdweb.com) - check our guides and development resources.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 
 You can check out [the thirdweb GitHub organization](https://github.com/thirdweb-dev) - your feedback and contributions are welcome!
 
 ## Join our Discord!
 
-For any questions or suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
+For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
