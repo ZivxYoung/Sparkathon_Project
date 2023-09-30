@@ -1,14 +1,13 @@
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import {useWallet} from '@solana/wallet-adapter-react'
 import { Wallet } from '@project-serum/anchor';
-import  Payment  from './components/Payment'; // Use relative import // hold see we want to have payment or not
+import Payment from "./Payment";
 
 // DAO tutorial
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router } from 'react-router-dom'
+// import {BrowserRouter as Router} from 'react-router-dom'
 import MyApp from "./_app";
 import { ThirdwebProvider } from "@thirdweb-dev/react/solana";
 import { ChainId } from "@thirdweb-dev/sdk";
@@ -33,16 +32,15 @@ const WalletMultiButtonDynamic = dynamic(
 );
 
 
-
 const Login = () => {
 
   const wallet = useWallet()    // check the wallet that connecting
 
-  if (wallet.connected) return <Payment/>
+  // if (wallet.connected) return <Payment/>
   return (
     <>
-      <div className={styles.container}>
-        <h1 className={styles.h1}>Welcome to GGLOL Crowdfunding Website 👋</h1>
+      <div>
+        <h1>Welcome to GGLOL Crowdfunding Website 👋</h1>
         <WalletMultiButtonDynamic />
       </div>
     </>
