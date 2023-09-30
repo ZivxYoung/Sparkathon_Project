@@ -1,3 +1,5 @@
+// this file is App.jsx (Video)
+
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import {useWallet} from '@solana/wallet-adapter-react'
@@ -12,15 +14,6 @@ import MyApp from "./_app";
 import { ThirdwebProvider } from "@thirdweb-dev/react/solana";
 import { ChainId } from "@thirdweb-dev/sdk";
 
-
-// const root = ReactDOM.createRoot(document.getElementById('root'));     
-// root.render(   
-//   <ThirdwebProvider desiredChainId={}>                   // alr in _app.jsx (hold)
-//     <Router>
-//       <App />
-//     </Router>
-//   </ThirdwebProvider>
-// )
 
 // Default styles that can be overridden by your app
 require("@solana/wallet-adapter-react-ui/styles.css");
